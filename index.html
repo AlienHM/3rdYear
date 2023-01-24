@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>3-cü ilimiz</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js" integrity="sha256-ivk71nXhz9nsyFDoYoGf2sbjrR9ddh+XDkCcfZxjvcM=" crossorigin="anonymous"></script>
+
+    <script>
+      $(document).ready(function(){
+        $('.drybn-collage-item').click(function() {
+          $(this).toggleClass('item--active');
+          
+        })
+        $('.drybn-collage-item--heading').click(function() {
+          if ($(this).hasClass('item--active')){
+            
+            $('.prev').css('display', 'none');
+            $('.metn').css('display', 'block');
+          }
+          else {
+            $('.prev').css('display', 'block');
+            $('.metn').css('display', 'none');
+            
+          }
+            
+          
+          
+        })
+
+      })
+      
+    </script>
+
+  </head>
+  <body>
+    <main>
+        <div class="drybn-collage">
+          <div class="drybn-collage__overlay">
+            <div class="drybn-collage__content">
+              <div class="drybn-collage-item"></div>
+              <div class="drybn-collage-item"></div>
+              <div class="drybn-collage-item"></div>
+              <div class="drybn-collage-item drybn-collage-item--heading">
+                <div class="prev"><img src="heart.gif" alt=""></div>
+                <div class="metn">
+                  <h1>Cücünüm, həyatımın mənası,</h1>
+                  <p> Bu məktubu üçüncü ildönümümüz münasibətilə sənə sonsuz sevgimi və heyranlığımı bildirmək üçün yazıram. Səninlə sevgili olduğumdan bəri artıq üç il keçdiyinə inanmaq çooox çətindir.</p>
+                  <p> Bu son üç ildə sən mənim həyatımın ən dəyərli varlığına çevrildin. Həyatıma gətirdiyin bütün sevgi, o xoş hisslər və gülüş üçün çooox çoxxx sağ ol.</p>
+                  <p> Gələcəyimizi düşünürəm və növbəti üç ilin nə gətirəcəyini görmək üçün çoox həyəcanlanıram. Bilirəm ki, biz çətinliklərlə üzləşəcik, amma onu da bilirəm ki, bir-birimizə sahib olduğumuz müddətdə hər şeyin öhdəsindən gələ bilərik.</p>
+                  <p> Mənim həyatım, ən yaxın dostum, həyatımın sevgisi, yanımda olduğun üçün , mənim olduğun üçün çooox sağ ol !!! Səbirsizliklə sənin yanında, birlikdə daha çooox illər keçirməyi gözləyirəm.</p>
+                  <p> Mən səni sözlərimin ifadə edə biləcəyindən də çox sevirəm. Nə yaxşı ki, mənimləsən !!!</p>
+                  <p> 3-cü ilimiz mübarək, sevgilim. Səni sevirəm 💚</p>
+                  <p> Əbədi sənin Əlin</p>
+                </div>
+              </div>
+              <div class="drybn-collage-item"></div>
+              <div class="drybn-collage-item"></div>
+              <div class="drybn-collage-item"></div>
+              <div class="drybn-collage-item"></div>
+            </div>
+          </div>
+        </div>
+
+
+    </main>
+  </body>
+</html>
+
+
